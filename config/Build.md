@@ -1,84 +1,99 @@
 # 手动搭建项目结构
 
-## 安装webpack
+## 安装 webpack
 
-``` cmd
+```node
 npm install --save-dev webpack webpack-cli
 ```
 
-## 安装React
+## 安装 React
 
-``` cmd
-npm install react react-dom
+```node
+npm install --save react react-dom
 ```
 
-## 安装TypeScript
+## 安装与配置 TypeScript
 
-``` cmd
-npm install --save-dev typescript 
-```
+- 安装 TypeScript
 
-## 安装TypeScript声明文件
+  ```node
+  npm install --save-dev typescript
+  ```
 
-``` cmd
-npm i --save-dev @types/react @types/react-dom
-```
+- 安装 TypeScript 声明文件
 
-## 安装相关loader
+  ```node
+  npm install --save-dev @types/react @types/react-dom
+  ```
 
-### 1. cssloader 和 styleloader
+- [TypeScript 配置](../tsconfig.json)
 
-``` cmd
-npm install --save-dev style-loader css-loader
-```
+## 安装 Webpack 插件与 loader
 
-### 2. urlloader 和 fileloader
+- 安装 babel
 
-``` cmd
-npm install --save-dev url-loader file-loader
-```
+  1. babel 内核及环境：
 
-### 3. 安装babel
+     ```node
+     npm install --save-dev @babel/core @babel/preset-env
+     ```
 
-``` cmd
-// babel内核及环境：
-npm install --save-dev @babel/core @babel/preset-env
+  2. react 和 ts 支持
 
-// react和ts支持
-npm install --save-dev @babel/preset-react @babel/preset-typescript
+     ```node
+     npm install --save-dev @babel/preset-react @babel/preset-typescript
+     ```
 
-// loader：
-npm install --save-dev babel-loader
-```
+  3. loader：
 
-## 安装相关插件
+     ```node
+     npm install --save-dev babel-loader
+     ```
 
-### 1. 安装 html-webpack-plugin
+- 安装 html-webpack-plugin
 
-``` cmd
-npm install --save-dev html-webpack-plugin
-```
+  ```node
+  npm install --save-dev html-webpack-plugin
+  ```
 
-### 2. 安装 webpack-dev-server
+- cssloader 和 styleloader
 
-``` cmd
-npm install --save-dev webpack-dev-server
-```
+  ```node
+  npm install --save-dev style-loader css-loader
+  ```
 
-### 3. 安装 webpack-merge
+- urlloader 和 fileloader
 
-``` cmd
-npm install --save-dev webpack-merge
-```
+  ```node
+  npm install --save-dev url-loader file-loader
+  ```
 
-### 4. 安装 copy-webpack-plugin
+- 安装 webpack-dev-server
 
-``` cmd
-npm install --save-dev copy-webpack-plugin
-```
+  ```node
+  npm install --save-dev webpack-dev-server
+  ```
 
-### 5. 安装 clean-webpack-plugin
+- 安装 webpack-merge
 
-``` cmd
-npm install --save-dev clean-webpack-plugin
+  ```node
+  npm install --save-dev webpack-merge
+  ```
+
+- 安装 copy-webpack-plugin
+
+  ```node
+  npm install --save-dev copy-webpack-plugin
+  ```
+
+- 安装 clean-webpack-plugin
+
+  ```node
+  npm install --save-dev clean-webpack-plugin
+  ```
+
+## 安装 AntDesign
+
+```node
+  npm install antd --save
 ```

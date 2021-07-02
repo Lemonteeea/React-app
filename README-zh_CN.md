@@ -1,10 +1,10 @@
 # React-app
 
-## Introduce
+## 介绍
 
-- A React template
-- Build base on Webpack5
-- Contains:
+- 一个 React 应用的模板
+- 基于 Webpack5
+- 包含了：
 
   1. React
   2. TypeScript
@@ -14,18 +14,18 @@
   6. EsLint + StyleLint + Prettier
   7. AntDesign
 
-- Use it to start a project simplily
-- Save your time for the webpack config
+- 使用它来简单地开启一个项目
+- 节省你配置 Webpack 的时间
 
-## Usage
+## 用法
 
-- Install
+- 安装
 
   ```node
   npm install
   ```
 
-- Start
+- 开始
 
   ```node
   npm run serve
