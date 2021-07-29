@@ -3,18 +3,19 @@ import logo from '@/assets/images/logo.svg'
 import { Button } from 'antd'
 import styles from './index.less'
 
-interface Props {}
+interface PageProps {}
 interface State {
   show: boolean
 }
 
-class Home extends React.Component<Props, State> {
-  constructor(props: Props) {
+class Home extends React.Component<PageProps, State> {
+  constructor(props: PageProps) {
     super(props)
     this.state = {
       show: true,
     }
   }
+
   render() {
     return (
       <Fragment>
@@ -32,9 +33,10 @@ class Home extends React.Component<Props, State> {
       </Fragment>
     )
   }
+
   handleClick = () => {
     this.setState({
-      show: this.state.show ? false : true,
+      show: !this.state.show,
     })
   }
 }

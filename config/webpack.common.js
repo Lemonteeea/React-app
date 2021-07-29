@@ -74,10 +74,6 @@ module.exports = {
               lessOptions: {
                 modifyVars: {
                   'primary-color': '#1DA57A',
-                  'component-background': '#ffff00',
-                  'btn-default-bg': '#ff0000',
-                  'link-color': '#1DA57A',
-                  'border-radius-base': '2px',
                 },
                 javascriptEnabled: true,
               },
@@ -115,7 +111,7 @@ module.exports = {
         {
           from: path.resolve(__dirname, '../public'),
           filter: async (resourcePath) => {
-            const reg = /\index.html$/
+            const reg = /index.html$/
             return !reg.test(resourcePath)
           },
         },
